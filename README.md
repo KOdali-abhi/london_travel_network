@@ -59,19 +59,29 @@ cp .env.example .env
 
 ```
 london_travel_network/
-├── docs/                    # Documentation
-│   ├── images/             # Architecture diagrams
-│   └── api_specs/          # API specifications
-├── scripts/                # Processing scripts
-│   ├── data_quality.py     # Data quality checks
-│   └── deploy_infrastructure.py  # AWS CDK deployment
-├── lambda/                 # Lambda functions
-│   └── ingestion/         # Data ingestion functions
-├── tests/                 # Test files
-├── sample_data/          # Sample datasets
-├── .env.example         # Environment variables template
-├── requirements.txt     # Python dependencies
-└── README.md           # Project documentation
+├── LICENSE
+├── README.md
+├── architecture.md
+├── requirements.txt
+├── test_results_tfl.md
+├── dashboards/
+│   └── transport_analysis_dashboard.json
+├── data/
+├── lambda/
+│   └── ingestion/
+│       ├── index.py
+│       └── requirements.txt
+├── scripts/
+│   ├── data_quality.py
+│   ├── deploy_infrastructure.py
+│   └── upload_to_s3.py
+├── sql/
+│   ├── create_journey_table.sql
+│   ├── peak_analysis.sql
+│   └── popular_transport_methods.sql
+└── tests/
+    └── test_data_quality.py
+
 ```
 
 ## Deployment
